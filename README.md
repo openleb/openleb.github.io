@@ -1,7 +1,7 @@
 openleb.io Website
 =================
 
-openleb.io is a shared commons of data and tools for Lebanon made by the public for use by the public. This repository builds the front facing website for http://openleb.io
+[openleb.io](http://openleb.io) is a shared commons of data and tools for Lebanon made by the public for use by the public. This repository builds the front facing website.
 
 ## Contributing
 

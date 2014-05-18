@@ -1,7 +1,7 @@
-openleb.github.io
+openleb.io Website
 =================
 
-This is the ront facing website for http://openleb.io
+openleb.io is a shared commons of data and tools for Lebanon made by the public for use by the public. This repository builds the front facing website for http://openleb.io
 
 ## Contributing
 

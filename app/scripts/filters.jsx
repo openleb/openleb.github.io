@@ -228,7 +228,7 @@ var FilterableTable = React.createClass({
 })
 
 React.renderComponent(
-	<FilterableTable url="http://api.nouwweb.pw/search?deputies_terms=2009" />,
+	<FilterableTable url="http://api.openleb.io/search?deputies_terms=2009" />,
 	document.getElementById('content')
 );
 }());

@@ -2,12 +2,13 @@
 <html class="no-js">
     <head>
         <meta charset="utf-8">
-        <title>OpenLeb</title>
+        <title>nouwweb</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
         <!-- build:css styles/vendor.css -->
+        <link rel="stylesheet" href="bower_components/chosen_v1.1.0/chosen.css"></script>
         <!-- bower:css -->
         <!-- endbower -->
         <!-- endbuild -->
@@ -26,98 +27,23 @@
         <![endif]-->
 
 <div class="container">
-  <h1 class="col-md-12 header" id="title">the @openleb project</h1>
-
-  <div class="col-md-4">
-
-    <p>
-      <strong><a href="https://github.com/openleb">openleb.io</a></strong>  is a shared commons of data and tools for Lebanon made by the public for use by the public.
-    </p>
-    <p>
-      Featuring work by <a href="http://lambalabs.org">Lamba Labs</a>, <a href="http://smex.org">SMEX</a> and the Internet.
-    </p>
-
-    <p>
-      Help out:
-    </p>
-
-    <ul>
-      <li>
-        fix <a href="https://github.com/openleb/nouwweb/issues">open issues</a> or share new ideas!
-      </li>
-      <li>
-        start or submit a project for inclusion on this page
-      </li>
-      <li>
-        gather or report inaccuracies in the data
-      </li>
-      <li>
-        use our tools to build your own project! (and <a href="https://groups.google.com/forum/#!forum/openleb">tell us</a> about it on the mailing list)
-      </li>
-    </ul>
-
-    <p>
-      <!--More about <a href="">why we're doing this</a>. -->
-    </p>
-
-    <p>
-      Design adapted from <a href="http://dccode.org">dccode.org</a> and <a href="http://theunitedstates.io">theunitedstates.io</a>.
-    </p>
+  <h1 class="col-md-12 header" id="title">nouwweb: list of legislators</h1>
+  <div id="nav">
+    <a href="index.html"><- back</a>
+    <p style="float:right" >Information on this page is sourced from <a target="_blank" href="https://docs.google.com/document/d/1ufbbCb5k-39hIZ-AboMafcdvYZQ_c1TZkwIJ6LB9v7c/pub">here</a>.
   </div>
 
-  <div class="col-md-8">
-    <div class="col-md-12">
-      <div class="col-md-12">
-        <h3 class="col-md-11">
-          <a href="https://github.com/kamicut/lebanon-maps/tree/master/administrative-districts">
-            /districts
-          </a>
-        </h3>
-        <p class="col-md-11">
-          Detailed data on administrative districts.
-        </p>
-      </div>
+  <div id="content"></div>
 
-      <div class="col-md-12">
-        <h3 class="col-md-11">
-          <a href="nouwweb.html">
-            /nouwweb
-          </a>
-        </h3>
-        <p class="col-md-11">
-          Names of the parliamentary members and their info.
-        </p>
-      </div>
-    </div>
-
-
-    <div class="col-md-12">
-      <div class="col-md-12">
-        <h3 class="col-md-11">
-          <a href="http://nouwweb.readthedocs.org/">
-            /search
-          </a>
-        </h3>
-        <p class="col-md-11">
-          An API to search for members of parliament
-        </p>
-      </div>
-  </div>
-
-
-    </div>
-
-   
-
-    
+</div>
 
   <footer class="col-md-12 footer">
     <p>
+    <div id="img"><img src="images/loader.gif"></img></div>
       Content on this page is dedicated to the public domain under a <a href="http://creativecommons.org/publicdomain/zero/1.0/">CC0 License</a>.
     </p>
   </footer>
 
-</div>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
@@ -126,13 +52,15 @@
             e=o.createElement(i);r=o.getElementsByTagName(i)[0];
             e.src='//www.google-analytics.com/analytics.js';
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create', 'UA-51122018-1', 'openleb.io');ga('send','pageview');
+              ga('create', 'UA-51122018-1', 'openleb.io');;ga('send','pageview');
         </script>
+
 
         <!-- build:js scripts/vendor.js -->
         <!-- bower:js -->
         <script src="bower_components/jquery/dist/jquery.js"></script>
-        <script src="bower_components/react/react.js"></script>
+        <script src="bower_components/react/react.min.js"></script>
+        <script src="bower_components/chosen_v1.1.0/chosen.jquery.min.js"></script>
         <script src="bower_components/react-chosen/react-chosen.js"></script>
         <!-- endbower -->
         <!-- endbuild -->
@@ -152,7 +80,9 @@
         <script src="bower_components/bootstrap-sass/vendor/assets/javascripts/bootstrap/tab.js"></script>
         <!-- endbuild -->
 
-        <!-- build:js scripts/main.js -->
+
+        <!-- build:js scripts/bundle.js -->
+        <script src="scripts/filters.js"></script>
         <script src="scripts/main.js"></script>
         <!-- endbuild -->
 </body>

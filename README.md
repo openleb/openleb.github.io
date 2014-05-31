@@ -12,6 +12,6 @@ npm install && bower install
 The website is built using `gulp build`
 
 ## Todo
-Right now the website is built using a gulpfile and pushed to the repo. For non-developers to contribute straight on github, we can investigate switching from `gulpfile build + deploy` to `static layout + Markdown + JS Markdown Converters`.
+Right now the website is built using a gulpfile and pushed to the repo. For non-developers to contribute straight on github, we can investigate switching from `gulpfile build + deploy` to `Jekyll`.
 
 
